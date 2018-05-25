@@ -1,25 +1,54 @@
 # Data Dashboard
 
-* **Track:** _Common Core_
-* **Curso:** _Creando tu primer sitio web interactivo_
-* **Unidad:** _Producto final_
+## Objetivo
 
-***
+Diseñar una herramienta que le permita a los Training Managers en Laboratoria consultar de forma eficaz los siguientes datos:
 
-## Flujo de trabajo
+* Número de estudiantes inscritas
+* Número de estudiantes que desertaron
+* Porcentaje de estudiantes que pasan el criterio mínimo de evaluación.
+* Promedio de notas por sprint (Final)
+* Promedio de notas HSE
+* Promedio de notas técnicas
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+Es recomendable que tenga la opción de acceder rápidamente a los datos según la generación y la sede.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+## Investigación
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+Se realizaron entrevistas con la training manager de Guadalajara: Karla Rejas; y con otros miembros del equipo de formación, así como con otros training manager de otras sedes; con la finalidad de obtener datos que nos sirvieran como referencia para poder comenzar a pensar en la solución del problema.
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+## Problemática
+
+* Se usan varias hojas de excel al mismo tiempo para alimentar un sólo archivo.
+
+* La cantiad de archivos abiertos al mismo tiempo dificulta su uso en otro dispositivo que no sea una computadora.
+
+* No se tiene una idea global del desempeño de cada alumna, de una generación y de la sede.
+
+* No existe una manera de tener comunicación inmediata de resultados a las alumnas.
+
+## Descubrimientos importantes de la entrevista
+
+La training manager desea tener información visual en gráficas minimalistas, con información elemental y precisa. 
+
+## Sketch
+
+Primera fase de sketching
+
+![imagen](assets/images/sketch1.jpg)
+![imagen](assets/images/sketch2.jpg)
+
+Prototipo
+
+![imagen](assets/images/proto1.jpg)
+![imagen](assets/images/proto2.jpg)
+![imagen](assets/images/proto3.jpg)
+![imagen](assets/images/proto4.jpg)
+![imagen](assets/images/proto5.jpg)
+![imagen](assets/images/proto6.jpg)
+![imagen](assets/images/proto7.jpeg)
+
+Después de la primer prueba se realizarón algunos cambios para que el producto fuera mas intuitivo.
+
+
