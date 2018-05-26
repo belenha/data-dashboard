@@ -52,3 +52,11 @@ Prototipo
 Después de la primer prueba se realizarón algunos cambios para que el producto fuera mas intuitivo.
 
 
+![imagen](assets/images/dashboard3.jpg)
+![imagen](assets/images/dashboard6.jpg)
+![imagen](assets/images/dashboard8.jpg)
+![imagen](assets/images/dashboard10.jpg)
+![imagen](assets/images/dashboard11.jpg)
+![imagen](assets/images/dashboard12.jpg)
+
+
