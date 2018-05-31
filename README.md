@@ -253,6 +253,16 @@ Diseñar una herramienta que le permita a los TM´s consultar de forma eficaz lo
 
 Considerar cada requerimiento como información por sede y generación, usar gráficas donde sean más óptimas.
 
+##Solucion 
+
+  Se tomo como punto de partida intentar eliminar el estres, agilizar el acceso a la informacion de manera precisa y lograrlo en una plataforma minimalista. 
+
+Para eliminar el estres se busco el uso de colores muy neutros y limpios pensando en la tendencia de diseño web actual. 
+Para brindar la informacion se busca sintetizar a la menor cantidad de tablas posibles, integrando tres resultados en una sola grafica creada por puntos, en la que cada punto representa una estudiante. 
+Se busca que el usuario haga navegacion minima para encontrar lo que necesita, por lo que el total de paginas a accesar debera de ser de igual manera, minima. 
+La navegacion debera de ser intuitiva y siguiendo el flujo de las paginas web mas comunes. 
+
+
 ## Definiendo al usuario
 
 > Martha es team leader en Laboratoria, como parte de sus actividades revisa los resultados   de las estudiantes de Laboratoria. No es una tarea facil, solo puede abrir los archivos en su laptop y  necesita revisar muchos documentos al mismo tiempo. Para Martha, realizar esta tarea es tedioso y estresante. Martha necesita una herramienta que le agilice ver resultados en una sola plataforma y desde cualquier dispositivo.
