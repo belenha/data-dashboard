@@ -42,3 +42,13 @@ body{
     position: relative;
     top: 20px;
 }
+
+.containerStudents{
+    display: inline-block;
+    left: 3vh;
+    position: relative;
+    top: 8vh;
+}
+/* #hide{
+    display: none;
+} */
