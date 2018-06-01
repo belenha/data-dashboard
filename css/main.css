@@ -28,4 +28,17 @@ body{
 }
 #helloName{
     display: none;
+    margin: 0;
+    top: 3vh;
+}
+
+/* #sede{
+    display: none;
+} */
+
+.sedes{
+    display: inline-block;
+    left: 3vh;
+    position: relative;
+    top: 20px;
 }

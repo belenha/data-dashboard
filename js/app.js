@@ -21,10 +21,15 @@ function validar(){
         var hide = document.getElementById('login');
         hide.style.display = 'none';
 
+        // Se muestra el nombre que el usuario ingreso
         var newName = document.createTextNode(usname);
         var hiName = document.getElementById('helloName');
         hiName.appendChild(newName);
         hiName.style.display = 'block';
+
+        // se muestra el listado con las sedes
+        // var showlist = document.getElementById('sede');
+        // showlist.style.display = 'block';
 
     }
     else{
@@ -33,3 +38,4 @@ function validar(){
 };
 
 firsStep.addEventListener('click',validar);
+
