@@ -37,8 +37,10 @@ body{
 } */
 
 .sedes{
+    background-color: darkgrey;
     display: inline-block;
-    left: 3vh;
+    left: 15px;
+    padding: 10px;
     position: relative;
     top: 20px;
 }

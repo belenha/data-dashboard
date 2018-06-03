@@ -9,7 +9,7 @@
 // var showare = document.getElementById('areq');
 // showare.appendChild(numberArequipa);
 
-// ***********  estudiantes activas AREQUIPA   ***********
+// ***********  ESTUDIANTES ACTIVAS E INACTIVAS AREQUIPA   ***********
 // var studentsAre = data.AQP['2016-2'].students;
 // console.log(studentsAre);
 
@@ -52,7 +52,7 @@ for(var i = 0; i < studentsAre.length; i++){
         // console.log ( estuinactiva);
     }
 }
-
+// ***** IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES
 var container = document.getElementById('firstGen');
 var total = document.createElement('p');
 var text = document.createTextNode('Hay ' + activeAre + ' estudiantes activas y ' + inactiveAre + ' estudiantes inactivas');
@@ -65,7 +65,6 @@ var activeNames = document.createTextNode('Estudiantes activas '+ namesAreActive
 var listActiveNames = document.createElement('p');
 listActiveNames.appendChild(activeNames);
 container.appendChild(listActiveNames);
-
 
 var namesAreInactive = totalinactive;
 var inactiveNames = document.createTextNode('Estudiantes inactivas '+ namesAreInactive);
@@ -113,6 +112,7 @@ for(var h = 0; h < studentsAreTwo.length; h++){
         // console.log('inactiveAre');
     }
 }
+// ***** IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA SEGUNDA GENERACION CON SUS NOMBRES
 var containerTwo = document.getElementById('secondGen');
 var totalTwo = document.createElement('p');
 var textTwo = document.createTextNode('Hay ' + activeAreTwo + ' estudiantes activas y ' + inactiveAreTwo + ' estudiantes inactivas');
@@ -127,7 +127,6 @@ var activeNames2 = document.createTextNode('Estudiantes activas '+ namesAreActiv
 var listActiveNames2 = document.createElement('p');
 listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
-
 
 var namesAreInactive2 = totalinactive2;
 var inactiveNames2 = document.createTextNode('Estudiantes inactivas '+ namesAreInactive2);
