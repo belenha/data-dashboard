@@ -49,9 +49,34 @@ var inactiveNamesLima = document.createTextNode('Estudiantes inactivas: '+ names
 var listInactiveNamesLima = document.createElement('p');
 listInactiveNamesLima.appendChild(inactiveNamesLima);
 container.appendChild(listInactiveNamesLima);
-// total.id=('hide');
-// total.style.display = 'block';
+
+var proms = data.LIM['2016-2'].ratings;
+console.log(proms);
+var promJedi = 0;
+var promTeacher = 0;
+
+for(var p = 0; p < proms.length; p++){
+    promJedi += (proms[p]['jedi'])/proms.length;
+    var jediTotal = promJedi.toFixed(1);
+    console.log(jediTotal);
+
+    promTeacher += (proms[p]['teacher'])/proms.length;
+    var teacherTotal = promTeacher.toFixed(1);
+    console.log(teacherTotal);
+
+  }
+
+    var jediText = document.createTextNode('El promedio del jedi es: ' + jediTotal);
+    var containerJedi = document.createElement('p');
+    var containerRatingJ = document.getElementById('firstGLima');
+    containerJedi.appendChild(jediText);
+    containerRatingJ.appendChild(containerJedi);
+
+
 });
+
+// var teacherPoints = data.LIM['2016-2'].ratings[0].teacher.length;
+// console.log(teacherPoints);
 
 // ******* SEGUNDA GENERACION LIMA  *******
 var secondGenLima = document.getElementById('secondGLima');
