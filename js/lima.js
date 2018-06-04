@@ -39,7 +39,6 @@ console.log(activePercent);
 var inactivePercent = Math.round(inactiveLima * 100 / totalStudents);
 console.log(inactivePercent);
 
-var 
 
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
 var container = document.getElementById('firstGLima');
@@ -48,12 +47,22 @@ var text = document.createTextNode('Hay ' + activeLima + ' estudiantes activas y
 totalLima1.appendChild(text);
 container.appendChild(totalLima1);
 
+var containerActive = document.createElement('p');
+var textActive = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercent + '%');
+containerActive.appendChild(textActive);
+container.appendChild(containerActive);
+
 var namesActiveLima = totalactiveLima;
 console.log(namesActiveLima);
 var activeNamesLima = document.createTextNode('Estudiantes activas: '+ namesActiveLima);
 var listActiveNamesLima = document.createElement('p');
 listActiveNamesLima.appendChild(activeNamesLima);
 container.appendChild(listActiveNamesLima);
+
+var containerInactive = document.createElement('p');
+var textInactive = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercent + '%');
+containerInactive.appendChild(textInactive);
+container.appendChild(containerInactive);
 
 var namesInactiveLima = totalinactiveLima;
 var inactiveNamesLima = document.createTextNode('Estudiantes inactivas: '+ namesInactiveLima);
@@ -67,33 +76,27 @@ var promJedi = 0;
 var promTeacher = 0;
 
 for(var p = 0; p < proms.length; p++){
-    promJedi += (proms[p]['jedi'])/proms.length;
-    var jediTotal = promJedi.toFixed(1);
-    console.log(jediTotal);
+     promJedi += (proms[p]['jedi'])/proms.length;
+     var jediTotal = promJedi.toFixed(1);
+     console.log(jediTotal);
 
-    promTeacher += (proms[p]['teacher'])/proms.length;
-    var teacherTotal = promTeacher.toFixed(1);
-    console.log(teacherTotal);
-
+     promTeacher += (proms[p]['teacher'])/proms.length;
+     var teacherTotal = promTeacher.toFixed(1);
+     console.log(teacherTotal);
   }
+     var jediText = document.createTextNode('El promedio del jedi es: ' + jediTotal);
+     var containerJedi = document.createElement('p');
+     var containerRatingJ = document.getElementById('firstGLima');
+     containerJedi.appendChild(jediText);
+     containerRatingJ.appendChild(containerJedi);
 
-    var jediText = document.createTextNode('El promedio del jedi es: ' + jediTotal);
-    var containerJedi = document.createElement('p');
-    var containerRatingJ = document.getElementById('firstGLima');
-    containerJedi.appendChild(jediText);
-    containerRatingJ.appendChild(containerJedi);
-
-    var teacherText = document.createTextNode('El promedio del teacher es: ' + teacherTotal);
-    var containerTeacher = document.createElement('p');
-    var containerRatingT = document.getElementById('firstGLima');
-    containerTeacher.appendChild(teacherText);
-    containerRatingT.appendChild(containerTeacher);
-
-
+     var teacherText = document.createTextNode('El promedio del teacher es: ' + teacherTotal);
+     var containerTeacher = document.createElement('p');
+     var containerRatingT = document.getElementById('firstGLima');
+     containerTeacher.appendChild(teacherText);
+     containerRatingT.appendChild(containerTeacher);
 });
 
-// var teacherPoints = data.LIM['2016-2'].ratings[0].teacher.length;
-// console.log(teacherPoints);
 
 // ******* SEGUNDA GENERACION LIMA  *******
 var secondGenLima = document.getElementById('secondGLima');
@@ -127,12 +130,24 @@ for(var h = 0; h < studentsLimaTwo.length; h++){
         // console.log('inactiveAre');
     }
 }
+
+var totalStudentsTwo = activeLimaTwo + inactiveLimaTwo;
+
+var activePercentTwo = Math.round(activeLimaTwo * 100 / totalStudentsTwo);
+
+var inactivePercentTwo = Math.round(inactiveLimaTwo * 100 / totalStudentsTwo);
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA SEGUNDA GENERACION CON SUS NOMBRES *******
 var containerTwo = document.getElementById('secondGLima');
 var totalLimaTwo = document.createElement('p');
 var textTwo = document.createTextNode('Hay ' + activeLimaTwo + ' estudiantes activas y ' + inactiveLimaTwo + ' estudiantes inactivas');
 totalLimaTwo.appendChild(textTwo);
 containerTwo.appendChild(totalLimaTwo);
+
+var containerActiveTwo = document.createElement('p');
+var textActiveTwo = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentTwo + '%');
+containerActiveTwo.appendChild(textActiveTwo);
+containerTwo.appendChild(containerActiveTwo);
 
 var namesActiveLima2 = totalactiveLima2;
 console.log(namesActiveLima2);
@@ -141,11 +156,42 @@ var listActiveNames2 = document.createElement('p');
 listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
 
+var containerInactiveTwo = document.createElement('p');
+var textInactiveTwo = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentTwo + '%');
+containerInactiveTwo.appendChild(textInactiveTwo);
+containerTwo.appendChild(containerInactiveTwo);
+
 var namesInactiveLima2 = totalinactiveLima2;
 var inactiveNames2 = document.createTextNode('Estudiantes inactivas: '+ namesInactiveLima2);
 var listInactiveNames2 = document.createElement('p');
 listInactiveNames2.appendChild(inactiveNames2);
 containerTwo.appendChild(listInactiveNames2);
+
+var promsTwo = data.LIM['2017-1'].ratings;
+console.log(promsTwo);
+var promJedi2 = 0;
+var promTeacher2 = 0;
+
+for(var q = 0; q < promsTwo.length; q++){
+     promJedi2 += (promsTwo[q]['jedi'])/promsTwo.length;
+     var jediTotal2 = promJedi2.toFixed(1);
+     console.log(jediTotal2);
+
+     promTeacher2 += (promsTwo[q]['teacher'])/promsTwo.length;
+     var teacherTotal2 = promTeacher2.toFixed(1);
+     console.log(teacherTotal2);
+  }
+     var jediText2 = document.createTextNode('El promedio del jedi es: ' + jediTotal2);
+     var containerJedi2 = document.createElement('p');
+     var containerRatingJ2 = document.getElementById('secondGLima');
+     containerJedi2.appendChild(jediText2);
+     containerRatingJ2.appendChild(containerJedi2);
+
+     var teacherText2 = document.createTextNode('El promedio del teacher es: ' + teacherTotal2);
+     var containerTeacher2 = document.createElement('p');
+     var containerRatingT2 = document.getElementById('secondGLima');
+     containerTeacher2.appendChild(teacherText2);
+     containerRatingT2.appendChild(containerTeacher2);
 });
 
 // ******* TERCERA GENERACION LIMA  *******
@@ -180,12 +226,23 @@ for(var h = 0; h < studentsLimaThree.length; h++){
         // console.log('inactiveAre');
     }
 }
+var totalStudentsThree = activeLimaThree + inactiveLimaThree;
+
+var activePercentThree = Math.round(activeLimaThree * 100 / totalStudentsThree);
+
+var inactivePercentThree = Math.round(inactiveLimaThree * 100 / totalStudentsThree);
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA SEGUNDA GENERACION CON SUS NOMBRES *******
 var containerThree= document.getElementById('thirdGLima');
 var totalLimaThree = document.createElement('p');
 var textThree = document.createTextNode('Hay ' + activeLimaThree + ' estudiantes activas y ' + inactiveLimaThree + ' estudiantes inactivas');
 totalLimaThree.appendChild(textThree);
 containerThree.appendChild(totalLimaThree);
+
+var containerActiveThree = document.createElement('p');
+var textActiveThree = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentThree + '%');
+containerActiveThree.appendChild(textActiveThree);
+containerThree.appendChild(containerActiveThree);
 
 var namesActiveLima3 = totalactiveLima3;
 console.log(namesActiveLima3);
@@ -194,9 +251,40 @@ var listActiveNames3 = document.createElement('p');
 listActiveNames3.appendChild(activeNames3);
 containerThree.appendChild(listActiveNames3);
 
+var containerInactiveThree = document.createElement('p');
+var textInactiveThree = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentThree + '%');
+containerInactiveThree.appendChild(textInactiveThree);
+containerThree.appendChild(containerInactiveThree);
+
 var namesInactiveLima3 = totalinactiveLima3;
 var inactiveNames3 = document.createTextNode('Estudiantes inactivas: '+ namesInactiveLima3);
 var listInactiveNames3 = document.createElement('p');
 listInactiveNames3.appendChild(inactiveNames3);
 containerThree.appendChild(listInactiveNames3);
+
+var promsThree = data.LIM['2017-2'].ratings;
+console.log(promsThree);
+var promJedi3 = 0;
+var promTeacher3 = 0;
+
+for(var n = 0; n < promsThree.length; n++){
+     promJedi3 += (promsThree[n]['jedi'])/promsThree.length;
+     var jediTotal3 = promJedi3.toFixed(1);
+     console.log(jediTotal3);
+
+     promTeacher3 += (promsThree[n]['teacher'])/promsThree.length;
+     var teacherTotal3 = promTeacher3.toFixed(1);
+     console.log(teacherTotal3);
+  }
+     var jediText3 = document.createTextNode('El promedio del jedi es: ' + jediTotal3);
+     var containerJedi3 = document.createElement('p');
+     var containerRatingJ3 = document.getElementById('thirdGLima');
+     containerJedi3.appendChild(jediText3);
+     containerRatingJ3.appendChild(containerJedi3);
+
+     var teacherText3 = document.createTextNode('El promedio del teacher es: ' + teacherTotal3);
+     var containerTeacher3 = document.createElement('p');
+     var containerRatingT3 = document.getElementById('thirdGLima');
+     containerTeacher3.appendChild(teacherText3);
+     containerRatingT3.appendChild(containerTeacher3);
 });
