@@ -51,7 +51,7 @@ totalCdmx1.appendChild(text);
 container.appendChild(totalCdmx1);
 
 var containerActive = document.createElement('p');
-var textActive = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercent + '%');
+var textActive = document.createTextNode('El porcentaje de estudiantes activas es: ' + activePercent + '%');
 containerActive.appendChild(textActive);
 container.appendChild(containerActive);
 
@@ -63,7 +63,7 @@ listActiveNamesCdmx.appendChild(activeNamesCdmx);
 container.appendChild(listActiveNamesCdmx);
 
 var containerInactive = document.createElement('p');
-var textInactive = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercent + '%');
+var textInactive = document.createTextNode('El porcentaje de estudiantes inactivas es: ' + inactivePercent + '%');
 containerInactive.appendChild(textInactive);
 container.appendChild(containerInactive);
 
@@ -150,7 +150,7 @@ totalTwo.appendChild(textTwo);
 containerTwo.appendChild(totalTwo);
 
 var containerActiveTwo = document.createElement('p');
-var textActiveTwo = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentTwo + '%');
+var textActiveTwo = document.createTextNode('El porcentaje de estudiantes activas es: ' + activePercentTwo + '%');
 containerActiveTwo.appendChild(textActiveTwo);
 containerTwo.appendChild(containerActiveTwo);
 
@@ -162,7 +162,7 @@ listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
 
 var containerInactiveTwo = document.createElement('p');
-var textInactiveTwo = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentTwo + '%');
+var textInactiveTwo = document.createTextNode('El porcentaje de estudiantes inactivas es: ' + inactivePercentTwo + '%');
 containerInactiveTwo.appendChild(textInactiveTwo);
 containerTwo.appendChild(containerInactiveTwo);
 

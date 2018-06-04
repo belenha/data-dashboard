@@ -50,7 +50,7 @@ totalLima1.appendChild(text);
 container.appendChild(totalLima1);
 
 var containerActive = document.createElement('p');
-var textActive = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercent + '%');
+var textActive = document.createTextNode('El porcentaje de estudiantes activas es: ' + activePercent + '%');
 containerActive.appendChild(textActive);
 container.appendChild(containerActive);
 
@@ -62,7 +62,7 @@ listActiveNamesLima.appendChild(activeNamesLima);
 container.appendChild(listActiveNamesLima);
 
 var containerInactive = document.createElement('p');
-var textInactive = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercent + '%');
+var textInactive = document.createTextNode('El porcentaje de estudiantes inactivas es: ' + inactivePercent + '%');
 containerInactive.appendChild(textInactive);
 container.appendChild(containerInactive);
 
@@ -149,7 +149,7 @@ totalLimaTwo.appendChild(textTwo);
 containerTwo.appendChild(totalLimaTwo);
 
 var containerActiveTwo = document.createElement('p');
-var textActiveTwo = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentTwo + '%');
+var textActiveTwo = document.createTextNode('El porcentaje de estudiantes activas es: ' + activePercentTwo + '%');
 containerActiveTwo.appendChild(textActiveTwo);
 containerTwo.appendChild(containerActiveTwo);
 
@@ -161,7 +161,7 @@ listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
 
 var containerInactiveTwo = document.createElement('p');
-var textInactiveTwo = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentTwo + '%');
+var textInactiveTwo = document.createTextNode('El porcentaje de estudiantes inactivas es: ' + inactivePercentTwo + '%');
 containerInactiveTwo.appendChild(textInactiveTwo);
 containerTwo.appendChild(containerInactiveTwo);
 
@@ -244,7 +244,7 @@ totalLimaThree.appendChild(textThree);
 containerThree.appendChild(totalLimaThree);
 
 var containerActiveThree = document.createElement('p');
-var textActiveThree = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentThree + '%');
+var textActiveThree = document.createTextNode('El porcentaje de estudiantes activas es: ' + activePercentThree + '%');
 containerActiveThree.appendChild(textActiveThree);
 containerThree.appendChild(containerActiveThree);
 
@@ -256,7 +256,7 @@ listActiveNames3.appendChild(activeNames3);
 containerThree.appendChild(listActiveNames3);
 
 var containerInactiveThree = document.createElement('p');
-var textInactiveThree = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentThree + '%');
+var textInactiveThree = document.createTextNode('El porcentaje de estudiantes inactivas es: ' + inactivePercentThree + '%');
 containerInactiveThree.appendChild(textInactiveThree);
 containerThree.appendChild(containerInactiveThree);
 
