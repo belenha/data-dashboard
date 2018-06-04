@@ -45,11 +45,6 @@ for(var i = 0; i < studentsAre.length; i++){
     } else {
         inactiveAre ++;
         totalinactive.push(studentsAre[i]['name']);
-        // console.log(totalinactive);
-        // totalinactive.push(studentsAre[i]['active'] != true);
-        // console.log(totalinactive);
-        // var estuinactiva = studentsAre[i].name;
-        // console.log ( estuinactiva);
     }
 }
 // ***** IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES
@@ -61,13 +56,13 @@ container.appendChild(total);
 
 var namesAreActive = totalactive;
 console.log(namesAreActive);
-var activeNames = document.createTextNode('Estudiantes activas '+ namesAreActive);
+var activeNames = document.createTextNode('Estudiantes activas: '+ namesAreActive);
 var listActiveNames = document.createElement('p');
 listActiveNames.appendChild(activeNames);
 container.appendChild(listActiveNames);
 
 var namesAreInactive = totalinactive;
-var inactiveNames = document.createTextNode('Estudiantes inactivas '+ namesAreInactive);
+var inactiveNames = document.createTextNode('Estudiantes inactivas: '+ namesAreInactive);
 var listInactiveNames = document.createElement('p');
 listInactiveNames.appendChild(inactiveNames);
 container.appendChild(listInactiveNames);
@@ -123,13 +118,13 @@ containerTwo.appendChild(totalTwo);
 
 var namesAreActive2 = totalactive2;
 console.log(namesAreActive2);
-var activeNames2 = document.createTextNode('Estudiantes activas '+ namesAreActive2);
+var activeNames2 = document.createTextNode('Estudiantes activas: '+ namesAreActive2);
 var listActiveNames2 = document.createElement('p');
 listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
 
 var namesAreInactive2 = totalinactive2;
-var inactiveNames2 = document.createTextNode('Estudiantes inactivas '+ namesAreInactive2);
+var inactiveNames2 = document.createTextNode('Estudiantes inactivas: '+ namesAreInactive2);
 var listInactiveNames2 = document.createElement('p');
 listInactiveNames2.appendChild(inactiveNames2);
 containerTwo.appendChild(listInactiveNames2);

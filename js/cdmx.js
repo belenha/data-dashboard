@@ -31,11 +31,7 @@ for(var i = 0; i < studentsCdmx.length; i++){
     } else {
         inactiveCdmx ++;
         totalinactiveCdmx.push(studentsCdmx[i]['name']);
-        // console.log(totalinactive);
-        // totalinactive.push(studentsAre[i]['active'] != true);
-        // console.log(totalinactive);
-        // var estuinactiva = studentsAre[i].name;
-        // console.log ( estuinactiva);
+    
     }
 }
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
@@ -47,13 +43,13 @@ container.appendChild(totalCdmx1);
 
 var namesActiveCdmx = totalactiveCdmx;
 console.log(namesActiveCdmx);
-var activeNamesCdmx = document.createTextNode('Estudiantes activas '+ namesActiveCdmx);
+var activeNamesCdmx = document.createTextNode('Estudiantes activas: '+ namesActiveCdmx);
 var listActiveNamesCdmx = document.createElement('p');
 listActiveNamesCdmx.appendChild(activeNamesCdmx);
 container.appendChild(listActiveNamesCdmx);
 
 var namesInactiveCdmx = totalinactiveCdmx;
-var inactiveNamesCdmx = document.createTextNode('Estudiantes inactivas '+ namesInactiveCdmx);
+var inactiveNamesCdmx = document.createTextNode('Estudiantes inactivas: '+ namesInactiveCdmx);
 var listInactiveNamesCdmx = document.createElement('p');
 listInactiveNamesCdmx.appendChild(inactiveNamesCdmx);
 container.appendChild(listInactiveNamesCdmx);
@@ -105,13 +101,13 @@ containerTwo.appendChild(totalTwo);
 
 var namesActiveCdmx2 = totalactiveCdmx2;
 console.log(namesActiveCdmx2);
-var activeNames2 = document.createTextNode('Estudiantes activas '+ namesActiveCdmx2);
+var activeNames2 = document.createTextNode('Estudiantes activas: '+ namesActiveCdmx2);
 var listActiveNames2 = document.createElement('p');
 listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
 
 var namesInactiveCdmx2 = totalinactiveCdmx2;
-var inactiveNames2 = document.createTextNode('Estudiantes inactivas '+ namesInactiveCdmx2);
+var inactiveNames2 = document.createTextNode('Estudiantes inactivas: '+ namesInactiveCdmx2);
 var listInactiveNames2 = document.createElement('p');
 listInactiveNames2.appendChild(inactiveNames2);
 containerTwo.appendChild(listInactiveNames2);
