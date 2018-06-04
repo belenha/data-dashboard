@@ -1,17 +1,41 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+}
+
 body{
-    box-sizing: border-box;
-    font-family: 'Questrial', sans-serif;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(to bottom, #99ccff 0%, #ffffff 100%);
+  /*background: linear-gradient(to bottom, #ffff99 0%, #ffffff 100%);*/
+  color:#f9fbfc;
+  box-sizing: border-box;
+  font-family: 'Questrial', sans-serif;x
+}
+
+#mainPageBlock {
+  position: relative;
+  left: 37%;
+  margin-top: 10%;
+}
+
+#appTitle {
+  font-size: 52px;
+}
+
+ #appSubtitle{
+   left: 13.5%;
+   position: relative;
+   margin-bottom: 20px;
 }
 
 .login *{
-    background-color: lightgray;
+    background-color: #abcff2;
     border: none;
     border-radius: 3px;
+    color:white;
     display: inline-block;
     font-family: 'Source Code Pro', monospace;
     left: 3vh;
@@ -20,16 +44,62 @@ body{
     top: 3vh;
 }
 
+#login {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    position: relative;
+    right: 24px;
+    width: 17%;
+}
+
+#name {
+  margin-bottom: 15px;
+  width: 311px;
+}
+
+#name:hover {
+  background-color: #bbdaf7;
+}
+
+#password {
+  margin-bottom: 15px;
+  width: 311px;
+}
+
+#password:hover {
+    background-color: #bbdaf7;
+}
+
+#send {
+  background-color: #8fb9e0;
+}
+
+#send:hover {
+  background-color: #5e9bd1;
+}
+
+#helpLink {
+  color: #abcff2;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
 .hello{
     display: inline;
     font-size: 22px;
     left: 3vh;
     position: relative;
 }
+
 #helloName{
+    color: #3f5e87;
     display: none;
+    font-size: 30px;
     margin: 0;
-    top: 3vh;
+    top: -25px;
+    left:41px;
+    position: relative;
 }
 
 /* #sede{
@@ -37,12 +107,24 @@ body{
 } */
 
 .sedes{
-    background-color: darkgrey;
     display: inline-block;
-    left: 15px;
-    padding: 10px;
+    left: 10px;
+    padding: 20px;
     position: relative;
     top: 20px;
+    text-decoration: none;
+}
+
+#sedes {
+    color: #3f5e87;
+    font-family: helvetica;
+    margin-top: 3%;
+    position: relative;
+    right: 32px;
+}
+
+a.sedes:hover {
+  color: #6da9ba;
 }
 
 .containerStudents{
@@ -51,6 +133,7 @@ body{
     position: relative;
     top: 8vh;
 }
+
 /* #hide{
     display: none;
 } */

@@ -3,16 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="icon" href="assets/tab-logo.jpg"></link>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Questrial|Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div id="mainPageBlock">
+    <h1 class="title" id="appTitle">&ltdashboard&gt</h1>
+    <h2 id="appSubtitle">Laboratoria</h2>
     <!-- Iniciar sesión-->
     <div class="login" id="login">
       <input class="name" id="name" type="text" placeholder="Nombre">
       <input class="password" id="password" type="password" placeholder="Contraseña">
       <button class="send" id="send">Ingresar</button>
     </div>
+      <br><i id="helpLink" class="far fa-question-circle"  ></i>
     <div>
       <p class="hello" id="helloName">Hola </p>
     </div>
@@ -24,6 +31,7 @@
       <a class="sedes" href="paginas/cdmx.html">CdMx</a>
       <a class="sedes" href="paginas/chile.html">Chile</a>
     </section>
+  </div>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
