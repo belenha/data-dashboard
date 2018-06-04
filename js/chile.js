@@ -30,12 +30,27 @@ for(var i = 0; i < studentsChile.length; i++){
         totalinactiveChile.push(studentsChile[i]['name']);
     }
 }
+
+var totalStudents = activeChile + inactiveChile;
+
+var activePercent = Math.round(activeChile * 100 / totalStudents);
+console.log(activePercent);
+
+var inactivePercent = Math.round(inactiveChile * 100 / totalStudents);
+console.log(inactivePercent);
+
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
 var container = document.getElementById('firstGChile');
 var totalChile = document.createElement('p');
 var text = document.createTextNode('Hay ' + activeChile + ' estudiantes activas y ' + inactiveChile + ' estudiantes inactivas');
 totalChile.appendChild(text);
 container.appendChild(totalChile);
+
+var containerActive = document.createElement('p');
+var textActive = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercent + '%');
+containerActive.appendChild(textActive);
+container.appendChild(containerActive);
 
 var namesActiveChile = totalactiveChile;
 console.log(namesActiveChile);
@@ -44,11 +59,42 @@ var listActiveNamesChile = document.createElement('p');
 listActiveNamesChile.appendChild(activeNamesChile);
 container.appendChild(listActiveNamesChile);
 
+var containerInactive = document.createElement('p');
+var textInactive = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercent + '%');
+containerInactive.appendChild(textInactive);
+container.appendChild(containerInactive);
+
 var namesInactiveChile = totalinactiveChile;
 var inactiveNamesChile = document.createTextNode('Estudiantes inactivas: '+ namesInactiveChile);
 var listInactiveNamesChile = document.createElement('p');
 listInactiveNamesChile.appendChild(inactiveNamesChile);
 container.appendChild(listInactiveNamesChile);
+
+var proms = data.SCL['2016-2'].ratings;
+console.log(proms);
+var promJedi = 0;
+var promTeacher = 0;
+
+for(var p = 0; p < proms.length; p++){
+     promJedi += (proms[p]['jedi'])/proms.length;
+     var jediTotal = promJedi.toFixed(1);
+     console.log(jediTotal);
+
+     promTeacher += (proms[p]['teacher'])/proms.length;
+     var teacherTotal = promTeacher.toFixed(1);
+     console.log(teacherTotal);
+  }
+     var jediText = document.createTextNode('El promedio del jedi es: ' + jediTotal);
+     var containerJedi = document.createElement('p');
+     var containerRatingJ = document.getElementById('firstGChile');
+     containerJedi.appendChild(jediText);
+     containerRatingJ.appendChild(containerJedi);
+
+     var teacherText = document.createTextNode('El promedio del teacher es: ' + teacherTotal);
+     var containerTeacher = document.createElement('p');
+     var containerRatingT = document.getElementById('firstGChile');
+     containerTeacher.appendChild(teacherText);
+     containerRatingT.appendChild(containerTeacher);
 
 });
 
@@ -84,12 +130,24 @@ for(var h = 0; h < studentsChileTwo.length; h++){
 
     }
 }
+
+var totalStudentsTwo = activeChileTwo + inactiveChileTwo;
+
+var activePercentTwo = Math.round(activeChileTwo * 100 / totalStudentsTwo);
+
+var inactivePercentTwo = Math.round(inactiveChileTwo * 100 / totalStudentsTwo);
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA SEGUNDA GENERACION CON SUS NOMBRES *******
 var containerTwo = document.getElementById('secondGChile');
 var totalChileTwo = document.createElement('p');
 var textTwo = document.createTextNode('Hay ' + activeChileTwo + ' estudiantes activas y ' + inactiveChileTwo + ' estudiantes inactivas');
 totalChileTwo.appendChild(textTwo);
 containerTwo.appendChild(totalChileTwo);
+
+var containerActiveTwo = document.createElement('p');
+var textActiveTwo = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentTwo + '%');
+containerActiveTwo.appendChild(textActiveTwo);
+containerTwo.appendChild(containerActiveTwo);
 
 var namesActiveChile2 = totalactiveChile2;
 console.log(namesActiveChile2);
@@ -98,11 +156,42 @@ var listActiveNames2 = document.createElement('p');
 listActiveNames2.appendChild(activeNames2);
 containerTwo.appendChild(listActiveNames2);
 
+var containerInactiveTwo = document.createElement('p');
+var textInactiveTwo = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentTwo + '%');
+containerInactiveTwo.appendChild(textInactiveTwo);
+containerTwo.appendChild(containerInactiveTwo);
+
 var namesInactiveChile2 = totalinactiveChile2;
 var inactiveNames2 = document.createTextNode('Estudiantes inactivas: '+ namesInactiveChile2);
 var listInactiveNames2 = document.createElement('p');
 listInactiveNames2.appendChild(inactiveNames2);
 containerTwo.appendChild(listInactiveNames2);
+
+var promsTwo = data.SCL['2017-1'].ratings;
+console.log(promsTwo);
+var promJedi2 = 0;
+var promTeacher2 = 0;
+
+for(var q = 0; q < promsTwo.length; q++){
+     promJedi2 += (promsTwo[q]['jedi'])/promsTwo.length;
+     var jediTotal2 = promJedi2.toFixed(1);
+     console.log(jediTotal2);
+
+     promTeacher2 += (promsTwo[q]['teacher'])/promsTwo.length;
+     var teacherTotal2 = promTeacher2.toFixed(1);
+     console.log(teacherTotal2);
+  }
+     var jediText2 = document.createTextNode('El promedio del jedi es: ' + jediTotal2);
+     var containerJedi2 = document.createElement('p');
+     var containerRatingJ2 = document.getElementById('secondGChile');
+     containerJedi2.appendChild(jediText2);
+     containerRatingJ2.appendChild(containerJedi2);
+
+     var teacherText2 = document.createTextNode('El promedio del teacher es: ' + teacherTotal2);
+     var containerTeacher2 = document.createElement('p');
+     var containerRatingT2 = document.getElementById('secondGChile');
+     containerTeacher2.appendChild(teacherText2);
+     containerRatingT2.appendChild(containerTeacher2);
 });
 
 // ******* TERCERA GENERACION CHILE  *******
@@ -137,12 +226,23 @@ for(var h = 0; h < studentsChileThree.length; h++){
 
     }
 }
+var totalStudentsThree = activeChileThree + inactiveChileThree;
+
+var activePercentThree = Math.round(activeChileThree * 100 / totalStudentsThree);
+
+var inactivePercentThree = Math.round(inactiveChileThree * 100 / totalStudentsThree);
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA SEGUNDA GENERACION CON SUS NOMBRES *******
 var containerThree= document.getElementById('thirdGChile');
 var totalChileThree = document.createElement('p');
 var textThree = document.createTextNode('Hay ' + activeChileThree + ' estudiantes activas y ' + inactiveChileThree + ' estudiantes inactivas');
 totalChileThree.appendChild(textThree);
 containerThree.appendChild(totalChileThree);
+
+var containerActiveThree = document.createElement('p');
+var textActiveThree = document.createTextNode('El porcentaje de alumnas activas es: ' + activePercentThree + '%');
+containerActiveThree.appendChild(textActiveThree);
+containerThree.appendChild(containerActiveThree);
 
 var namesActiveChile3 = totalactiveChile3;
 console.log(namesActiveChile3);
@@ -151,9 +251,40 @@ var listActiveNames3 = document.createElement('p');
 listActiveNames3.appendChild(activeNames3);
 containerThree.appendChild(listActiveNames3);
 
+var containerInactiveThree = document.createElement('p');
+var textInactiveThree = document.createTextNode('El porcentaje de alumnas inactivas es: ' + inactivePercentThree + '%');
+containerInactiveThree.appendChild(textInactiveThree);
+containerThree.appendChild(containerInactiveThree);
+
 var namesInactiveChile3 = totalinactiveChile3;
 var inactiveNames3 = document.createTextNode('Estudiantes inactivas: '+ namesInactiveChile3);
 var listInactiveNames3 = document.createElement('p');
 listInactiveNames3.appendChild(inactiveNames3);
 containerThree.appendChild(listInactiveNames3);
+
+var promsThree = data.SCL['2017-2'].ratings;
+console.log(promsThree);
+var promJedi3 = 0;
+var promTeacher3 = 0;
+
+for(var n = 0; n < promsThree.length; n++){
+     promJedi3 += (promsThree[n]['jedi'])/promsThree.length;
+     var jediTotal3 = promJedi3.toFixed(1);
+     console.log(jediTotal3);
+
+     promTeacher3 += (promsThree[n]['teacher'])/promsThree.length;
+     var teacherTotal3 = promTeacher3.toFixed(1);
+     console.log(teacherTotal3);
+  }
+     var jediText3 = document.createTextNode('El promedio del jedi es: ' + jediTotal3);
+     var containerJedi3 = document.createElement('p');
+     var containerRatingJ3 = document.getElementById('thirdGChile');
+     containerJedi3.appendChild(jediText3);
+     containerRatingJ3.appendChild(containerJedi3);
+
+     var teacherText3 = document.createTextNode('El promedio del teacher es: ' + teacherTotal3);
+     var containerTeacher3 = document.createElement('p');
+     var containerRatingT3 = document.getElementById('thirdGChile');
+     containerTeacher3.appendChild(teacherText3);
+     containerRatingT3.appendChild(containerTeacher3);
 });
