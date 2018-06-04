@@ -76,9 +76,9 @@ firsStep.addEventListener('click',validar);
 //             console.log("puntaje HSE " + scoreHSE);
 //             console.log("puntaje TECH " + scoreTech);
 //              var totalScore = scoreTech + scoreHSE;
-//              console.log(totalScore);  
+//              console.log(totalScore);
 //            }
-        
+
 //     } else {
 //         inactiveAre ++;
 //         totalinactive.push(studentsAre[i]['name']);
