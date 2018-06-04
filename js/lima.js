@@ -31,6 +31,8 @@ for(var i = 0; i < studentsLima.length; i++){
     }
 }
 
+//*******  OBTENER CANTIDAD Y PORCENTAJES DE ESTUDIANTES   *******
+
 var totalStudents = activeLima + inactiveLima;
 
 var activePercent = Math.round(activeLima * 100 / totalStudents);
@@ -69,6 +71,8 @@ var inactiveNamesLima = document.createTextNode('Estudiantes inactivas: '+ names
 var listInactiveNamesLima = document.createElement('p');
 listInactiveNamesLima.appendChild(inactiveNamesLima);
 container.appendChild(listInactiveNamesLima);
+
+//*******  OBTENER PROMEDIOS DE JEDIS Y TEACHERS   *******
 
 var proms = data.LIM['2016-2'].ratings;
 console.log(proms);

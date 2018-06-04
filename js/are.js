@@ -10,9 +10,6 @@
 // showare.appendChild(numberArequipa);
 
 // ***********  ESTUDIANTES ACTIVAS E INACTIVAS AREQUIPA   ***********
-// var studentsAre = data.AQP['2016-2'].students;
-// console.log(studentsAre);
-
 
 var firstG = document.getElementById('firstGen');
 
@@ -47,13 +44,14 @@ for(var i = 0; i < studentsAre.length; i++){
         totalinactive.push(studentsAre[i]['name']);
     }
 }
+
+//*******  OBTENER CANTIDAD Y PORCENTAJES DE ESTUDIANTES   *******
+
 var totalStudents = activeAre + inactiveAre;
 
 var activePercent = Math.round(activeAre * 100 / totalStudents);
-// console.log(activePercent);
 
 var inactivePercent = Math.round(inactiveAre * 100 / totalStudents);
-// console.log(inactivePercent);
 
 // ***** IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES
 var container = document.getElementById('firstGen');
@@ -84,6 +82,8 @@ var inactiveNames = document.createTextNode('Estudiantes inactivas: '+ namesAreI
 var listInactiveNames = document.createElement('p');
 listInactiveNames.appendChild(inactiveNames);
 container.appendChild(listInactiveNames);
+
+//*******  OBTENER PROMEDIOS DE JEDIS Y TEACHERS   *******
 
 var proms = data.AQP['2016-2'].ratings;
 // console.log(proms);

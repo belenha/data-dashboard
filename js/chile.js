@@ -31,13 +31,15 @@ for(var i = 0; i < studentsChile.length; i++){
     }
 }
 
+//*******  OBTENER CANTIDAD Y PORCENTAJES DE ESTUDIANTES   *******
+
 var totalStudents = activeChile + inactiveChile;
 
 var activePercent = Math.round(activeChile * 100 / totalStudents);
-console.log(activePercent);
+// console.log(activePercent);
 
 var inactivePercent = Math.round(inactiveChile * 100 / totalStudents);
-console.log(inactivePercent);
+// console.log(inactivePercent);
 
 
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
@@ -69,6 +71,8 @@ var inactiveNamesChile = document.createTextNode('Estudiantes inactivas: '+ name
 var listInactiveNamesChile = document.createElement('p');
 listInactiveNamesChile.appendChild(inactiveNamesChile);
 container.appendChild(listInactiveNamesChile);
+
+//*******  OBTENER PROMEDIOS DE JEDIS Y TEACHERS   *******
 
 var proms = data.SCL['2016-2'].ratings;
 console.log(proms);
