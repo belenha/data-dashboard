@@ -30,6 +30,17 @@ for(var i = 0; i < studentsLima.length; i++){
         totalinactiveLima.push(studentsLima[i]['name']);
     }
 }
+
+var totalStudents = activeLima + inactiveLima;
+
+var activePercent = Math.round(activeLima * 100 / totalStudents);
+console.log(activePercent);
+
+var inactivePercent = Math.round(inactiveLima * 100 / totalStudents);
+console.log(inactivePercent);
+
+var 
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
 var container = document.getElementById('firstGLima');
 var totalLima1 = document.createElement('p');
@@ -71,6 +82,12 @@ for(var p = 0; p < proms.length; p++){
     var containerRatingJ = document.getElementById('firstGLima');
     containerJedi.appendChild(jediText);
     containerRatingJ.appendChild(containerJedi);
+
+    var teacherText = document.createTextNode('El promedio del teacher es: ' + teacherTotal);
+    var containerTeacher = document.createElement('p');
+    var containerRatingT = document.getElementById('firstGLima');
+    containerTeacher.appendChild(teacherText);
+    containerRatingT.appendChild(containerTeacher);
 
 
 });
