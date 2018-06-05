@@ -8,16 +8,15 @@ html {
 }
 
 body{
-  background: linear-gradient(to bottom, #99ccff 0%, #ffffff 100%);
-  /*background: linear-gradient(to bottom, #ffff99 0%, #ffffff 100%);*/
+  background: linear-gradient(to bottom, #003366 0%, #33cccc 100%);
   color:#f9fbfc;
   box-sizing: border-box;
   font-family: 'Questrial', sans-serif;x
 }
 
 #navigator {
-  background-color: #157491;
-  color: white;
+  background-color: #084b76;
+  color: #157491;
   display: block;
   font-family: helvetica;
   font-size: 27px;
@@ -26,10 +25,16 @@ body{
 }
 
 #desplegable {
+  background-color: #084b76;
   font-family: helvetica;
-  height: 16px;
+  font-size: 15px;
+  height: 19px;
   margin-top: -7px;
   width: 113px;
+}
+
+#desplegable:hover {
+    color: #68cdd1;
 }
 
 ul, ol {
@@ -37,8 +42,8 @@ ul, ol {
 }
 
 .nav li a {
-  background-color: #157491;
-  color: white;
+  background-color: #084b76;
+  color: #c5e2ff;
   font-family: helvetica;
   font-size: 15px;
   text-decoration: none;
@@ -63,31 +68,17 @@ background: #1b83a3;
   float: left;
 }
 
-.nav-button {
-  background-color: #2F9292;
-  border-radius: 4px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-left: 2px;
-  padding: 9px 12px;
-  cursor:pointer;
-}
-
-.nav-button:hover {
-  background-color: #5cb5af;
-  color:#fcefbf;
-}
-
 #mainLogo {
+  color: #c5e2ff;
   text-decoration: none;
+  font-family: 'IBM Plex Sans', sans-serif;
   position: relative;
-  left:15%;
+  left:14%;
   cursor:pointer;
 }
 
 #mainLogo:visited {
-  color:white;
+  color:#c5e2ff;
 }
 
 #mainLogo:hover {
@@ -95,7 +86,8 @@ background: #1b83a3;
 }
 
 .fa-search {
-  font-size: 18px;
+  color: white;
+  font-size: 16px;
   position: relative;
   right: 35px;
   top:-4px;
@@ -103,11 +95,12 @@ background: #1b83a3;
 }
 
 #sedes {
+  color:#c5e2ff;
   font-size: 18px;
   margin-top: 0;
   padding-top: 0;
   position: fixed;
-  right: 40%;
+  right: 39%;
   top: 6%;
 
 }
@@ -168,7 +161,7 @@ a.sedes {
 }
 
 #search {
-  background-color: #3aa4c4;
+  background-color: #2e96ad;
   border: none;
   border-radius: 3px;
   color:white;
@@ -178,7 +171,12 @@ a.sedes {
   top: -1vh;
   opacity: 0.6;
   height: 16px;
-  margin-left: 3px;
+  margin-left: 28px;
+  margin-top: 8px;
+}
+
+#search:hover {
+  background-color:#3cabc1;
 }
 
 #search::placeholder {
@@ -213,4 +211,14 @@ a.sedes {
   margin-top: 3%;
   width: 100%;
   top:10px;
+}
+
+#botonEstudianteNone {
+  background-color: red;
+  color:red;;
+}
+
+#activa {
+  background-color: #04304f;
+  color:#04304f;
 }
