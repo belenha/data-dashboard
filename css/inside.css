@@ -156,7 +156,7 @@ a.sedes {
 #classroom {
   display: block;
   position: relative;
-  left: 13%;
+  left: 40%;
   margin-top: 8%;
 }
 
@@ -183,11 +183,12 @@ a.sedes {
   color: white;
 }
 
-#firstGen {
+.allGens{
   background-color: #157491;
   color:white;
   display: block;
-  font-size: 25px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
   padding-left: 10px;
   position: relative;
   padding: 3px;
@@ -198,27 +199,11 @@ a.sedes {
   top:10px;
 }
 
-#secondGen {
-  background-color: #157491;
-  color:white;
-  display: block;
-  font-size: 25px;
-  padding-left: 10px;
-  position: relative;
-  padding: 3px;
-  border-radius: 4px;
-  left: 3%;
-  margin-top: 3%;
-  width: 100%;
-  top:10px;
+.genTwo {
+  background-color: #497AB2 ;
 }
 
-#botonEstudianteNone {
-  background-color: red;
-  color:red;;
-}
-
-#activa {
-  background-color: #04304f;
-  color:#04304f;
+.inactive {
+  background-color: pink;
+  border-radius: 50%;
 }
