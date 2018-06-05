@@ -236,6 +236,27 @@ var activePercentThree = Math.round(activeLimaThree * 100 / totalStudentsThree);
 
 var inactivePercentThree = Math.round(inactiveLimaThree * 100 / totalStudentsThree);
 
+// ******* Prueba de gráficas *******
+
+// google.charts.load('current', {'packages':['corechart']});
+// google.charts.setOnLoadCallback(drawChart);
+
+// // Draw the chart and set the chart values
+// function drawChart() {
+// var data = google.visualization.arrayToDataTable([
+// ['sede', "Lima 3ra generacion"],
+// ['activas', 43],
+// ['inactivas', 57]
+// ]);
+
+// // Optional; add a title and set the width and height of the chart
+// var options = {'name':'lima', 'width':550, 'height':400};
+
+// // Display the chart inside the <div> element with id="piechart"
+// var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+// chart.draw(data, options);
+// }
+
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA SEGUNDA GENERACION CON SUS NOMBRES *******
 var containerThree= document.getElementById('thirdGLima');
 var totalLimaThree = document.createElement('p');
