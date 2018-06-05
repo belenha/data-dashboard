@@ -22,9 +22,9 @@ for(var i = 0; i < studentsLima.length; i++){
             console.log("puntaje HSE " + scoreHSE);
             console.log("puntaje TECH " + scoreTech);
             var totalScore = scoreTech + scoreHSE;
-            console.log(totalScore);  
+            console.log(totalScore);
            }
-        
+
     } else {
         inactiveLima++;
         totalinactiveLima.push(studentsLima[i]['name']);
@@ -45,6 +45,7 @@ console.log(inactivePercent);
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
 var container = document.getElementById('firstGLima');
 var totalLima1 = document.createElement('p');
+totalLima1.setAttribute("class", "newElementStyle");
 var text = document.createTextNode('Hay ' + activeLima + ' estudiantes activas y ' + inactiveLima + ' estudiantes inactivas');
 totalLima1.appendChild(text);
 container.appendChild(totalLima1);
@@ -64,6 +65,7 @@ var namesActiveLima = totalactiveLima;
 console.log(namesActiveLima);
 var activeNamesLima = document.createTextNode('Estudiantes activas: '+ namesActiveLima);
 var listActiveNamesLima = document.createElement('p');
+listActiveNamesLima.setAttribute("class", "newElementStyle");
 listActiveNamesLima.appendChild(activeNamesLima);
 container.appendChild(listActiveNamesLima);
 
@@ -81,6 +83,7 @@ container.appendChild(space4);
 var namesInactiveLima = totalinactiveLima;
 var inactiveNamesLima = document.createTextNode('Estudiantes inactivas: '+ namesInactiveLima);
 var listInactiveNamesLima = document.createElement('p');
+listInactiveNamesLima.setAttribute("class", "newElementStyle");
 listInactiveNamesLima.appendChild(inactiveNamesLima);
 container.appendChild(listInactiveNamesLima);
 
@@ -144,7 +147,7 @@ for(var h = 0; h < studentsLimaTwo.length; h++){
             console.log("puntaje HSE " + scoreHSE2);
             console.log("puntaje TECH " + scoreTech2);
             var totalScore2 = scoreTech2 + scoreHSE2;
-            console.log(totalScore2);  
+            console.log(totalScore2);
            }
     } else {
         inactiveLimaTwo ++;
@@ -258,7 +261,7 @@ for(var h = 0; h < studentsLimaThree.length; h++){
             console.log("puntaje HSE " + scoreHSE3);
             console.log("puntaje TECH " + scoreTech3);
             var totalScore3 = scoreTech3 + scoreHSE3;
-            console.log(totalScore3);  
+            console.log(totalScore3);
            }
     } else {
         inactiveLimaThree ++;

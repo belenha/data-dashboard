@@ -25,13 +25,13 @@ for(var i = 0; i < studentsCdmx.length; i++){
             console.log("puntaje HSE " + scoreHSE);
             console.log("puntaje TECH " + scoreTech);
             var totalScore = scoreTech + scoreHSE;
-            console.log(totalScore);  
+            console.log(totalScore);
            }
-        
+
     } else {
         inactiveCdmx ++;
         totalinactiveCdmx.push(studentsCdmx[i]['name']);
-    
+
     }
 }
 
@@ -145,7 +145,7 @@ for(var h = 0; h < studentsCdmxTwo.length; h++){
             console.log("puntaje HSE " + scoreHSE2);
             console.log("puntaje TECH " + scoreTech2);
             var totalScore2 = scoreTech2 + scoreHSE2;
-            console.log(totalScore2);  
+            console.log(totalScore2);
            }
     } else {
         inactiveCdmxTwo ++;
@@ -226,7 +226,7 @@ for(var q = 0; q < promsTwo.length; q++){
     containerRatingJ2.appendChild(containerJedi2);
 
     var space6 = document.createElement('br');
-    containerTwo.appendChild(space6); 
+    containerTwo.appendChild(space6);
 
     var teacherText2 = document.createTextNode('El promedio del teacher es: ' + teacherTotal2);
     var containerTeacher2 = document.createElement('p');
