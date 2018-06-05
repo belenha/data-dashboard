@@ -56,6 +56,7 @@ var inactivePercent = Math.round(inactiveAre * 100 / totalStudents);
 // ***** IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES
 var container = document.getElementById('firstGen');
 var total = document.createElement('p');
+total.setAttribute("class", "newElementStyle");
 var text = document.createTextNode('Hay ' + activeAre + ' estudiantes activas y ' + inactiveAre + ' estudiantes inactivas');
 total.appendChild(text);
 container.appendChild(total);
@@ -75,6 +76,7 @@ var namesAreActive = totalactive;
 console.log(namesAreActive);
 var activeNames = document.createTextNode('Estudiantes activas: '+ namesAreActive);
 var listActiveNames = document.createElement('p');
+listActiveNames.setAttribute("class", "newElementStyle");
 listActiveNames.appendChild(activeNames);
 container.appendChild(listActiveNames);
 
@@ -92,6 +94,7 @@ container.appendChild(space4);
 var namesAreInactive = totalinactive;
 var inactiveNames = document.createTextNode('Estudiantes inactivas: '+ namesAreInactive);
 var listInactiveNames = document.createElement('p');
+listInactiveNames.setAttribute("class", "newElementStyle");
 listInactiveNames.appendChild(inactiveNames);
 container.appendChild(listInactiveNames);
 
@@ -121,7 +124,7 @@ for(var p = 0; p < proms.length; p++){
     containerRatingJ.appendChild(containerJedi);
 
     var space6 = document.createElement('br');
-    container.appendChild(space6); 
+    container.appendChild(space6);
 
     var teacherText = document.createTextNode('El promedio del teacher es: ' + teacherTotal);
     var containerTeacher = document.createElement('p');
@@ -235,7 +238,7 @@ for(var q = 0; q < promsTwo.length; q++){
     containerRatingJ2.appendChild(containerJedi2);
 
     var space6 = document.createElement('br');
-    containerTwo.appendChild(space6); 
+    containerTwo.appendChild(space6);
 
     var teacherText2 = document.createTextNode('El promedio del teacher es: ' + teacherTotal2);
     var containerTeacher2 = document.createElement('p');
@@ -248,5 +251,3 @@ for(var q = 0; q < promsTwo.length; q++){
 // var chart = new Chart(ctx, {
 //     // The type of chart we want to create
 //     type: 'line',
-
-    

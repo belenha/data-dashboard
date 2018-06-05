@@ -22,9 +22,9 @@ for(var i = 0; i < studentsChile.length; i++){
             console.log("puntaje HSE " + scoreHSE);
             console.log("puntaje TECH " + scoreTech);
             var totalScore = scoreTech + scoreHSE;
-            console.log(totalScore);  
+            console.log(totalScore);
            }
-        
+
     } else {
         inactiveChile++;
         totalinactiveChile.push(studentsChile[i]['name']);
@@ -45,6 +45,7 @@ var inactivePercent = Math.round(inactiveChile * 100 / totalStudents);
 // ******* IMPRIMIENDO LAS ESTUDIANTES ACTIVAS, INACTIVAS DE LA PRIMERA GENERACION CON SUS NOMBRES  *******
 var container = document.getElementById('firstGChile');
 var totalChile = document.createElement('p');
+totalChile.setAttribute("class", "newElementStyle");
 var text = document.createTextNode('Hay ' + activeChile + ' estudiantes activas y ' + inactiveChile + ' estudiantes inactivas');
 totalChile.appendChild(text);
 container.appendChild(totalChile);
@@ -66,6 +67,7 @@ var activeNamesChile = document.createTextNode('Estudiantes activas: '+ namesAct
 var listActiveNamesChile = document.createElement('p');
 listActiveNamesChile.appendChild(activeNamesChile);
 container.appendChild(listActiveNamesChile);
+listActiveNamesChile.setAttribute("class", "newElementStyle");
 
 var space3 = document.createElement('br');
 container.appendChild(space3);
@@ -83,6 +85,7 @@ var inactiveNamesChile = document.createTextNode('Estudiantes inactivas: '+ name
 var listInactiveNamesChile = document.createElement('p');
 listInactiveNamesChile.appendChild(inactiveNamesChile);
 container.appendChild(listInactiveNamesChile);
+
 
 var space5 = document.createElement('br');
 container.appendChild(space5);
@@ -144,7 +147,7 @@ for(var h = 0; h < studentsChileTwo.length; h++){
             console.log("puntaje HSE " + scoreHSE2);
             console.log("puntaje TECH " + scoreTech2);
             var totalScore2 = scoreTech2 + scoreHSE2;
-            console.log(totalScore2);  
+            console.log(totalScore2);
            }
     } else {
         inactiveChileTwo ++;
@@ -258,7 +261,7 @@ for(var h = 0; h < studentsChileThree.length; h++){
             console.log("puntaje HSE " + scoreHSE3);
             console.log("puntaje TECH " + scoreTech3);
             var totalScore3 = scoreTech3 + scoreHSE3;
-            console.log(totalScore3);  
+            console.log(totalScore3);
            }
     } else {
         inactiveChileThree ++;
