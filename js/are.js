@@ -208,9 +208,9 @@ for(var q = 0; q < promsTwo.length; q++){
      containerRatingT2.appendChild(containerTeacher2);
 });
 
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
+// var ctx = document.getElementById('myChart').getContext('2d');
+// var chart = new Chart(ctx, {
+//     // The type of chart we want to create
+//     type: 'line',
 
     
