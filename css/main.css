@@ -8,8 +8,7 @@ html {
 }
 
 body{
-  background: linear-gradient(to bottom, #99ccff 0%, #ffffff 100%);
-  /*background: linear-gradient(to bottom, #ffff99 0%, #ffffff 100%);*/
+  background: linear-gradient(to bottom, #003366 0%, #33cccc 100%);
   color:#f9fbfc;
   box-sizing: border-box;
   font-family: 'Questrial', sans-serif;x
@@ -32,9 +31,8 @@ body{
 }
 
 .login *{
-    background-color: #abcff2;
+    background-color: #2e96ad;
     border: none;
-    border-radius: 3px;
     color:white;
     display: inline-block;
     font-family: 'Source Code Pro', monospace;
@@ -57,8 +55,12 @@ body{
   width: 311px;
 }
 
+#name::placeholder {
+  color:white;
+}
+
 #name:hover {
-  background-color: #bbdaf7;
+  background-color: #3cabc1;
 }
 
 #password {
@@ -66,16 +68,20 @@ body{
   width: 311px;
 }
 
+#password::placeholder {
+  color:white;
+}
+
 #password:hover {
-    background-color: #bbdaf7;
+  background-color: #3cabc1;
 }
 
 #send {
-  background-color: #8fb9e0;
+  background-color: #106286;
 }
 
 #send:hover {
-  background-color: #5e9bd1;
+  background-color: #207499;
 }
 
 #helpLink {
@@ -93,7 +99,7 @@ body{
 }
 
 #helloName{
-    color: #3f5e87;
+    color: #abcff2;
     display: none;
     font-size: 30px;
     margin: 0;
@@ -108,6 +114,8 @@ body{
 
 .sedes{
     display: inline-block;
+    font-weight:100;
+    color: #157491;
     left: 10px;
     padding: 20px;
     position: relative;
@@ -116,15 +124,16 @@ body{
 }
 
 #sedes {
-    color: #3f5e87;
+    color: #abcff2;
     font-family: helvetica;
+    font-size: 19px;
     margin-top: 3%;
     position: relative;
-    right: 32px;
+    right: 50px;
 }
 
 a.sedes:hover {
-  color: #6da9ba;
+    font-weight: bold;
 }
 
 .containerStudents{

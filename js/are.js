@@ -36,9 +36,9 @@ for(var i = 0; i < studentsAre.length; i++){
             console.log("puntaje HSE " + scoreHSE);
             console.log("puntaje TECH " + scoreTech);
              var totalScore = scoreTech + scoreHSE;
-             console.log(totalScore);  
+             console.log(totalScore);
            }
-        
+
     } else {
         inactiveAre ++;
         totalinactive.push(studentsAre[i]['name']);
@@ -136,7 +136,7 @@ for(var h = 0; h < studentsAreTwo.length; h++){
             console.log("puntaje HSE " + scoreHSE2);
             console.log("puntaje TECH " + scoreTech2);
              var totalScore2 = scoreTech2 + scoreHSE2;
-             console.log(totalScore2);  
+             console.log(totalScore2);
            }
     } else {
         inactiveAreTwo ++;
@@ -207,3 +207,10 @@ for(var q = 0; q < promsTwo.length; q++){
      containerTeacher2.appendChild(teacherText2);
      containerRatingT2.appendChild(containerTeacher2);
 });
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    
